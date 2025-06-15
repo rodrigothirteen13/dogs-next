@@ -51,7 +51,7 @@ export function PHOTOS_GET({
   };
 }
 
-export function FOTO_GET(id) {
+export function FOTO_GET(id: string) {
   return {
     url: `${API_URL}/api/photo/${id}`,
   };
