@@ -23,7 +23,7 @@ export default async function photoGet(id: string): Promise<PhotoData> {
   });
 
   if (!response.ok) {
-    throw new Error('Erro ao pegar as foto.');
+    throw new Error('Erro ao pegar a foto.');
   }
 
   const data = (await response.json()) as PhotoData;
