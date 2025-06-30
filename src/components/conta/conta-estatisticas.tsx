@@ -25,6 +25,7 @@ export default function ContaEstatisticas({ data }: { data: StatsData[] }) {
     );
     setGraph(graphData);
   }, [data]);
+
   return (
     <section className={`${styles.graph} animeLeft`}>
       <div className={`${styles.total} ${styles.graphItem}`}>
