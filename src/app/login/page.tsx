@@ -1,7 +1,7 @@
 import LoginForm from '@/components/login/login-form';
 import { Metadata } from 'next';
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: 'Login | Dogs',
   description: 'Logue na sua conta no site Dogs.',
 };

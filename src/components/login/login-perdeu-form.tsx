@@ -24,7 +24,7 @@ function FormButton() {
 export default function LoginPerdeuForm() {
   const [state, action] = useFormState(passwordLost, {
     ok: false,
-    error: '',
+    erro: '',
     data: null,
   });
 
@@ -36,7 +36,7 @@ export default function LoginPerdeuForm() {
         name="url"
         value={`${window.location.href.replace('perdeu', 'resetar')}`}
       />
-      <ErrorMessage error={state.error} />
+      <ErrorMessage error={state.erro} />
       {state.ok ? (
         <p style={{ color: '#4c1' }}>Email enviado.</p>
       ) : (

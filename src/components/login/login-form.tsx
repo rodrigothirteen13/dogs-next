@@ -25,7 +25,7 @@ function FormButton() {
 export default function LoginForm() {
   const [state, action] = useFormState(login, {
     ok: false,
-    error: '',
+    erro: '',
     data: null,
   });
 
@@ -38,7 +38,7 @@ export default function LoginForm() {
       <form action={action} className={styles.form}>
         <Input label="Usuário" name="username" type="text" />
         <Input label="Senha" name="password" type="password" />
-        <ErrorMessage error={state.error} />
+        <ErrorMessage error={state.erro} />
         <FormButton />
       </form>
       <Link className={styles.perdeu} href="/login/perdeu">

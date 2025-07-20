@@ -1,7 +1,7 @@
 import LoginResetarForm from '@/components/login/login-resetar-form';
 import { Metadata } from 'next';
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: 'Resetar a senha | Dogs',
   description: 'Resete a sua senha.',
 };

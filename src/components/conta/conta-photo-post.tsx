@@ -24,7 +24,7 @@ function FormButton() {
 export default function ContaPhotoPost() {
   const [state, action] = useFormState(photoPost, {
     ok: false,
-    error: '',
+    erro: '',
     data: null,
   });
 
@@ -48,7 +48,7 @@ export default function ContaPhotoPost() {
           id="img"
           className={styles.file}
         />
-        <ErrorMessage error={state.error} />
+        <ErrorMessage error={state.erro} />
         <FormButton />
       </form>
       <div>

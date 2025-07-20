@@ -1,7 +1,7 @@
 import LoginPerdeuForm from '@/components/login/login-perdeu-form';
 import { Metadata } from 'next';
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: 'Perdeu a senha | Dogs',
   description: 'Recupere a sua senha.',
 };

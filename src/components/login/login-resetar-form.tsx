@@ -30,7 +30,7 @@ export default function LoginResetarForm({
 }) {
   const [state, action] = useFormState(passwordReset, {
     ok: false,
-    error: '',
+    erro: '',
     data: null,
   });
 
@@ -39,7 +39,7 @@ export default function LoginResetarForm({
       <Input label="Nova Senha" name="password" type="password" />
       <input type="hidden" name="login" value={login} />
       <input type="hidden" name="key" value={keyToken} />
-      <ErrorMessage error={state.error} />
+      <ErrorMessage error={state.erro} />
       <FormButton />
     </form>
   );

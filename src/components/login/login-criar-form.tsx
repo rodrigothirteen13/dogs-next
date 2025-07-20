@@ -24,7 +24,7 @@ function FormButton() {
 export default function LoginCriarForm() {
   const [state, action] = useFormState(userPost, {
     ok: false,
-    error: '',
+    erro: '',
     data: null,
   });
 
@@ -37,7 +37,7 @@ export default function LoginCriarForm() {
       <Input label="Usuário" name="username" type="text" />
       <Input label="Email" name="email" type="email" />
       <Input label="Senha" name="password" type="password" />
-      <ErrorMessage error={state.error} />
+      <ErrorMessage error={state.erro} />
       <FormButton />
     </form>
   );

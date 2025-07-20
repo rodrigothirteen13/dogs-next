@@ -23,7 +23,7 @@ export default async function login(state: {}, formData: FormData) {
       sameSite: 'lax',
       maxAge: 60 * 60 * 24,
     });
-    return { data: null, ok: true, error: '' };
+    return { data: null, ok: true, erro: '' };
   } catch (error: unknown) {
     return apiError(error);
   }

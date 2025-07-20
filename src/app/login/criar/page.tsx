@@ -1,7 +1,7 @@
 import LoginCriarForm from '@/components/login/login-criar-form';
 import { Metadata } from 'next';
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: 'Crie sua conta',
   description: 'Crie sua conta no site Dogs.',
 };

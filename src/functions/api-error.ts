@@ -1,11 +1,11 @@
 export default function apiError(error: unknown): {
   data: null;
   ok: false;
-  error: string;
+  erro: string;
 } {
   if (error instanceof Error) {
-    return { data: null, ok: false, error: error.message };
+    return { data: null, ok: false, erro: error.message };
   } else {
-    return { data: null, ok: false, error: 'Erro genérico.' };
+    return { data: null, ok: false, erro: 'Erro genérico.' };
   }
 }
